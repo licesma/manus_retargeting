@@ -1,0 +1,24 @@
+# WebRTC / server
+aiohttp==3.9.5
+aiohttp_cors==0.7.0
+aiortc==1.8.0
+av==11.0.0
+
+# Vuer (VR streaming UI)
+vuer==0.0.32rc7
+
+# Dex retargeting (local fork used; pin version for reference)
+dex_retargeting==0.1.1
+
+# Math / science
+numpy==1.23.0
+scipy==1.10.1
+
+# Visualization
+matplotlib==3.7.5
+
+# Utilities
+PyYAML==6.0.1
+params-proto==2.12.1
+pyzmq
+pytransform3d==3.5.0
