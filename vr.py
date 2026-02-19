@@ -96,7 +96,7 @@ class ManusSkeletonReceiver:
     def _loop(self):
         while self._running:
             try:
-                msg = self.socket.recv()  # 阻塞直到有一条最新
+                msg = self.socket.recv() 
             except zmq.error.ZMQError:
                 break
 
