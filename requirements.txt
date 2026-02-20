@@ -1,8 +1,8 @@
 # WebRTC / server
 aiohttp==3.9.5
 aiohttp_cors==0.7.0
-aiortc==1.8.0
-av==11.0.0
+aiortc==1.14.0
+av==14.2.0
 
 # Vuer (VR streaming UI)
 vuer==0.0.32rc7

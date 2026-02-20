@@ -1,7 +1,7 @@
 import time
 from vr import VuerTeleop
 
-CONFIG_FILE = "../Humanoid-Teleop/assets/inspire_hand/inspire_hand.yml"
+CONFIG_FILE = "./assets/inspire_hand/inspire_hand.yml"
 
 teleop = VuerTeleop(config_file_path=CONFIG_FILE, img_shm_name=None)
 

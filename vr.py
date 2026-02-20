@@ -445,10 +445,9 @@ class VuerTeleop:
             right_glove_sn="c152afa7",
         )
 
-        # self.processor = VuerPreprocessor(manus_receiver=self.manus_receiver)
-        self.processor = VuerPreprocessor()
+        self.processor = VuerPreprocessor(manus_receiver=self.manus_receiver)
 
-        RetargetingConfig.set_default_urdf_dir("../assets")
+        RetargetingConfig.set_default_urdf_dir("./assets")
         with Path(config_file_path).open("r") as f:
             cfg = yaml.safe_load(f)
         left_retargeting_config = RetargetingConfig.from_dict(cfg["left"])
