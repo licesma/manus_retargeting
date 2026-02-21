@@ -10,12 +10,12 @@ try:
     while True:
         head, left_wrist, right_wrist, left_hand, right_hand = teleop.step()
 
-        # left_hand and right_hand are retargeted joint angles (qpos)
-        # shape: (7,) for Unitree Dex3 [thumb x3, middle x2, index x2]
-        # None if no hand data received yet
-        print(f"Left  hand qpos: {left_hand}")
-        print(f"Right hand qpos: {right_hand}")
-        print()
+        # right_hand qpos shape: (7,) -> [thumb x3, middle x2, index x2]
+        if right_hand is not None:
+            idx0, idx1 = right_hand[5], right_hand[6]
+            #print(f"Right hand index joints: [{idx0:.4f}, {idx1:.4f}]")
+        else:
+            print("Right hand index joints: no data yet")
 
         time.sleep(0.05)
 

@@ -266,11 +266,14 @@ class VuerPreprocessor:
             left_landmarks = manus_left    # shape (25,3)
             right_landmarks = manus_right  # shape (25,3)
             # print("Using manus as finger tracking")
+            """
             print(
                 "[MANUS raw tips] thumb", manus_left[24],
                 " index", manus_left[4],
                 " middle", manus_left[9],
             )
+            """
+            print("thumb", manus_left[24])
         else:
             # 回退用 VP 原始 landmarks
             left_landmarks = tv.left_landmarks.copy()
